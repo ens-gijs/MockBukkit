@@ -137,7 +137,9 @@ public class RegistryAccessMock implements RegistryAccess
 				{
 					String className = element.getAsString();
 					output.put(registryKey, className);
-				} else {
+				}
+				else
+				{
 					throw new InternalDataLoadException("Null JSON element while retrieving `" + registryKey.key().asString() + "` - MockBukkit / MC version mismatch?");
 				}
 			}
